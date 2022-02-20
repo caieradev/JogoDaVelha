@@ -11,8 +11,9 @@ html {
 
 body {
     display: flex;
-    justify-content: center;
+    align-items: center;
     padding-top: 50px;
+    flex-direction: column;
 }
 
 main {
@@ -41,4 +42,83 @@ main {
     height: 80%;
     border-radius: 15px;
     box-shadow: 10px 15px 10px #0d1a2b;
+    display: flex;
+    justify-content: center;
+}
+
+#restart {
+    margin-top: 60px;
+    padding: 20px;
+    width: 150px;
+    background-color: #22436e;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 10px 15px 10px #0d1a2b;
+}
+
+#restart:hover{
+    background-color: #29538a;
+}
+
+.O:after {
+    content: "\2B55";
+    font-size: 105px;
+}
+
+.X:after {
+    content: "\274C";
+    font-size: 105px;
+}
+
+@media screen and (max-width: 1366px){
+    main {
+        width: 450px;
+        height: 450px;
+        box-shadow: 10px 15px 10px #0d1a2b;
+    }
+    
+    .square {
+        box-shadow: 5px 10px 10px #0d1a2b;
+    }
+
+    #restart{
+        margin-top: 35px;
+    }
+
+    .O:after {
+        font-size: 73px;
+    }
+
+    .X:after {
+        font-size: 73px;
+    }
+}
+
+@media screen and (max-width: 820px){
+    main {
+        width: 340px;
+        height: 340px;
+        box-shadow: 10px 15px 10px #0d1a2b;
+    }
+    
+    .square {
+        box-shadow: 5px 10px 10px #0d1a2b;
+    }
+
+    #restart{
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .O:after {
+        font-size: 57px;
+    }
+
+    .X:after {
+        font-size: 57px;
+    }
 }
